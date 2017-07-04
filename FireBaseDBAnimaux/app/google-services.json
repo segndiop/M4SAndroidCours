@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "287425479691",
+    "firebase_url": "https://dbanimaux.firebaseio.com",
+    "project_id": "dbanimaux",
+    "storage_bucket": "dbanimaux.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287425479691:android:1c9ecf453b234a8b",
+        "android_client_info": {
+          "package_name": "com.example.mdiop.firebasedbanimaux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287425479691-758okqln3sfsl3514b1rdg5ibru3fgu6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mdiop.firebasedbanimaux",
+            "certificate_hash": "821ff35b8c003245ea7706e5da25eebc2d7eb3f7"
+          }
+        },
+        {
+          "client_id": "287425479691-ou7nimqhv42inpq2bvt49ev3517b7ps0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8RIYV-nzJSezXPTkl5ngC-KoMKmb7Lvc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287425479691-ou7nimqhv42inpq2bvt49ev3517b7ps0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

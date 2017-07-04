@@ -43,20 +43,22 @@ class ReadOnlineImage extends AsyncTask<Void, Integer, Bitmap> {
     protected Bitmap doInBackground(Void... params) {
         URL url = null;
         Bitmap bp = null;
+        HttpURLConnection con=null;
         try {
             url = new URL("https://github.com/segndiop/M4SAndroidCours/blob/master/Screenshots/DiopMadiawPortraitXML.PNG");
-            HttpURLConnection con = (HttpURLConnection) url.openConnection();
-            if (con.getResponseCode() != 200) {
-                throw new Exception("Failed to connect");
-            }
+            con = (HttpURLConnection) url.openConnection();
+           // if (con.getResponseCode() != 200) {
+            //    throw new Exception("Failed to connect");
+           // }
             InputStream in = con.getInputStream();
-            in.close();
+           // in.close();
             bp = BitmapFactory.decodeStream(in);
 
         } catch (Exception e) {
             e.printStackTrace();
             Log.e("Image", "Failed to load", e);
             Log.e("error", e.getMessage());
+            con.disconnect();
         }
         return bp;
     }
